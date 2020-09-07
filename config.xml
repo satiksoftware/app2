@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+        id="com.kishanagro"
+        version = "1.1.1">
+
+    <name>Kishan Agro </name>
+
+    <description>
+        product catalog of Kishan Agro v1.1.1
+    </description>
+
+    <author href="https://www.satiksoftware.com" email="info@satiksoftware.com">
+        Satik Software Pvt Ltd
+    </author>
+
+    <content src="index.html" />
+
+    <!--
+        If you do not want any permissions to be added to your app, add the
+        following tag to your config.xml; you will still have the INTERNET
+        permission on your app, which PhoneGap requires.
+    -->
+
+  <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name='pgb-builder-version' value='1' />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-targetSdkVersion" value="28"/>
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="orientation" value="portrait" />
+
+    <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value=" to let you take a new profile picture." />
+        <variable name="PHOTO_LIBRARY_USAGE_DESCRIPTION" value=" to let you select a profile picture." />
+    </plugin>
+
+    <!-- plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" /-->
+    <!-- plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" /-->
+    <plugin name="cordova-plugin-console" source="npm" spec="~1.1.0" />
+   <!-- <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1" />-->
+    <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
+    <!--<plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0" /> -->
+    <!--<plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" /> -->
+    <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
+    <!--<plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.5.0" /> -->
+   <!--  <plugin name="cordova-plugin-geolocation" source="npm" spec="~2.1.0" /> -->
+   <!-- <plugin name="cordova-plugin-globalization" source="npm" spec="~1.0.3" />-->
+    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0" />
+   <!-- <plugin name="cordova-plugin-media" source="npm" spec="~2.2.0" /> -->
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+    <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
+   <!-- <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />-->
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+   <!-- <plugin name="phonegap-plugin-push" source="npm" spec="1.9.0" />-->
+    <!--  <plugin name="cordova-plugin-mauron85-background-geolocation" spec="3.0.0-alpha.50" /> -->
+
+
+
+    <!-- Define app icon for each platform. -->
+    <icon src="images/icon.png" />
+    <icon src="images/res/icon/android/icon-36-ldpi.png"   platform="android"    density="ldpi" />
+    <icon src="images/res/icon/android/icon-48-mdpi.png"   platform="android"    density="mdpi" />
+    <icon src="images/res/icon/android/icon-72-hdpi.png"   platform="android"    density="hdpi" />
+    <icon src="images/res/icon/android/icon-96-xhdpi.png"  platform="android"    density="xhdpi" />
+    <icon src="images/res/icon/ios/icon-57.png"            platform="ios"        width="57" height="57" />
+    <icon src="images/res/icon/ios/icon-72.png"            platform="ios"        width="72" height="72" />
+    <icon src="images/res/icon/ios/icon-57-2x.png"         platform="ios"        width="114" height="114" />
+    <icon src="images/res/icon/ios/icon-72-2x.png"         platform="ios"        width="144" height="144" />
+    <icon src="images/res/icon/windows-phone/icon-48.png"  platform="winphone" />
+    <icon src="images/res/icon/windows-phone/icon-173.png" platform="winphone"   role="background" />
+
+    <!-- Define app splash screen for each platform. -->
+    <splash src="images/res/screen/android/screen-ldpi-portrait.png"  platform="android" density="ldpi" />
+    <splash src="images/res/screen/android/screen-mdpi-portrait.png"  platform="android" density="mdpi" />
+    <splash src="images/res/screen/android/screen-hdpi-portrait.png"  platform="android" density="hdpi" />
+    <splash src="images/res/screen/android/screen-xhdpi-portrait.png" platform="android" density="xhdpi" />
+    <splash src="images/res/screen/ios/screen-iphone-portrait.png"    platform="ios"     width="320" height="480" />
+    <splash src="images/res/screen/ios/screen-iphone-portrait-2x.png" platform="ios"     width="640" height="960" />
+    <splash src="images/res/screen/ios/screen-ipad-portrait.png"      platform="ios"     width="768" height="1024" />
+    <splash src="images/res/screen/ios/screen-ipad-landscape.png"     platform="ios"     width="1024" height="768" />
+    <splash src="images/res/screen/windows-phone/screen-portrait.jpg" platform="winphone" />
+
+    <config-file platform="ios" parent="CFBundleShortVersionString">
+        <string>100</string>
+    </config-file>
+
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="android" spec="^6.3.0" />
+
+</widget>
