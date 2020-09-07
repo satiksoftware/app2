@@ -1,0 +1,135 @@
+.prod.col-6svg{
+    fill:#fff;
+}
+
+.curptr{
+    cursor:pointer;
+}
+
+.font-11{
+    font-size: 11px;
+}
+
+.font-12{
+    font-size: 12px;
+}
+
+.font-14{
+    font-size: 14px;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+#scrollerContentDiv, #catlist{
+    overflow: auto;
+}
+
+.prod.col-6 {
+    border-bottom: 1px solid rgba(0,0,0, 0.25);
+    border-right: 1px solid rgba(0,0,0, 0.25);
+    height: 240px;
+    float: left;
+}
+
+.prod.col-12 {
+    border-bottom: 1px solid rgba(0,0,0, 0.25);
+    height: 140px;
+    float: left;
+}
+
+.prod.col-6:only-child{
+    width: 100%;
+    max-width: 100%;
+}
+
+.prod .prodimg div {
+    height: 120px;
+    width:100%;
+    background-size: contain;
+    background-position: center ;
+    background-repeat: no-repeat ;
+}
+.prod.col-12 .prodimg {
+    width: 50%;
+    float: left;
+}
+
+.hidden{
+    display: none;
+}
+.prod .title {
+    text-align: center;
+    text-overflow: ellipsis;
+    max-height : 20px;
+    overflow: hidden;
+}
+
+.prod.col-12 .title {
+    max-height: 38px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.prod .desc {
+    text-overflow: ellipsis;
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.prod.col-12 .desc {
+    height: 75px;
+    text-align: left;
+    display: none;
+}
+
+.prod.col-12 .add-cart {
+    justify-content: start !important;
+}
+
+#product_details{
+    position: absolute;
+    background: #fff;
+    min-height: 88%;
+    z-index: 1;
+    top:57px;
+}
+
+.add-cart .plus, .add-cart .minus{
+    width: 34px;
+}
+
+.add-cart-btn{
+    width: auto !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield;
+    height: 30px;
+    text-align: center;
+}
+
+#product_details .carousel-item{
+    height: 210px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.w-98{
+    width: 98%;
+}
+
+#navbar{
+    z-index: 9999;
+}
